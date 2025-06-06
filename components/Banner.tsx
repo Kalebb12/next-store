@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
-const Banner = () => {
+
+const Banner = async () => {
   return (
     <section className="bg-primary-foreground ">
       <div className="grid  max-w-7xl mx-auto place-items-center grid-cols-1 lg:grid-cols-12">

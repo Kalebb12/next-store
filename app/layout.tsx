@@ -24,11 +24,11 @@ export const metadata : Metadata = {
     title: "Next-Store | Modern E-Commerce",
     description:
       "Discover the future of shopping at Next-Store. Lightning-fast checkout, beautiful UI, and unbeatable products.",
-    url: "https://next-store-green-rho.vercel.app/",
+    url: "https://nextjs-store-ivory.vercel.app/",
     siteName: "Next-Store",
     images: [
       {
-        url: "https://next-store-green-rho.vercel.app/og-image.png",
+        url: "https://nextjs-store-ivory.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Next-Store Hero Image",
@@ -42,10 +42,10 @@ export const metadata : Metadata = {
     title: "Next-Store | Modern E-Commerce",
     description:
       "Experience modern e-commerce with speed and style. Built with Next.js and love.",
-    images: ["https://next-store-green-rho.vercel.app/og-image.png"],
+    images: ["https://nextjs-store-ivory.vercel.app/og-image.png"],
     creator: "@yourTwitterHandle", // optional
   },
-  metadataBase: new URL("https://next-store-green-rho.vercel.app/"),
+  metadataBase: new URL("https://nextjs-store-ivory.vercel.app/"),
 };
 
 
