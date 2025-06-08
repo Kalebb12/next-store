@@ -5,6 +5,7 @@ import Link from "next/link";
 import useSWR from "swr";
 import StarRating from "./StarRating";
 import Image from "next/image";
+import { Product } from "@prisma/client";
 
 const ProductsRow = () => {
   const { data, error, isLoading } = useSWR(
@@ -38,7 +39,7 @@ const ProductsRow = () => {
 
   return (
     <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      {data.map((product: any) => (
+      {data.map((product: Product) => (
         <Link href={`/product/${product.id}`} key={product.id}>
           <div
             className="bg-white text-start rounded-xl hover:shadow-lg shadow-md p-4"
