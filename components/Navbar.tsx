@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <header className="fixed top-0 left-0 h-20 bg-background  right-0 flex items-center ">
+    <header className="fixed top-0 left-0 h-20 bg-background z-10  right-0 flex items-center ">
       <div className="gap-10 w-full max-w-7xl mx-auto flex items-center justify-between">
         <h1 className="font-bold text-3xl font-integral">
           <Link href="/">Next Store</Link>

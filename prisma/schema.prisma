@@ -22,5 +22,6 @@ model Product {
   category    String
   images      String[]
   thumbnail   String
+  rating      Float? 
   createdAt   DateTime @default(now())
 }

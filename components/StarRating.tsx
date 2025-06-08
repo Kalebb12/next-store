@@ -10,13 +10,13 @@ export default function StarRating({ rating }: { rating: number }) {
           i < rating ? <Star
           className="size-5"
           stroke='none'
-          fill="yellow"
+          fill="#FFC633"
         /> : i == rating + 0.5 ? <StarHalf className='size-5' stroke='none'
-          fill="yellow" /> : null
+          fill="#FFC633" /> : null
         }
       </div>
     );
   }
 
-  return <div className="flex gap-1">{stars} - {rating} / 5</div>;
+  return <div className="flex gap-1">{stars} <span className="text-sm">- {rating}/5</span></div>;
 }

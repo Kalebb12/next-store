@@ -38,6 +38,7 @@ const Banner = async () => {
             alt="Next Store Banner"
             width={400}
             height={500}
+            priority
           />
         </div>
       </div>
