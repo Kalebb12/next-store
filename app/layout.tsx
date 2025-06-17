@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { satoshi, integral } from "./fonts";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { ThemeProviderWrapper } from "@/components/ThemeProvider";
 
-
-export const metadata : Metadata = {
+export const metadata: Metadata = {
   title: "Next-Store | Modern E-Commerce",
   description:
     "Next-Store is a sleek, modern e-commerce platform built with Next.js. Shop top-quality products with a fast, secure, and seamless experience.",
@@ -48,22 +48,18 @@ export const metadata : Metadata = {
   metadataBase: new URL("https://nextjs-store-ivory.vercel.app/"),
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${satoshi.variable} ${integral.variable} antialiased `}
-      >
-        <Navbar />
-        <div className="mt-20">
-
-        {children}
-        </div>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${satoshi.variable} ${integral.variable} antialiased`}>
+        <ThemeProviderWrapper>
+          <Navbar />
+          <div className="mt-20">{children}</div>
+        </ThemeProviderWrapper>
       </body>
     </html>
   );

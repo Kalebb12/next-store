@@ -1,11 +1,12 @@
 import { ShoppingCart, UserCircle2, SearchIcon, MenuIcon } from "lucide-react";
 import Link from "next/link";
+import { ThemeToggle } from "./ThemeToggle";
 
 function Navbar() {
   return (
     <header className="fixed top-0 left-0 h-20 bg-background z-10 border-b border-black/10 right-0 flex items-center ">
       <div className="gap-10 w-full px-4 max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 text-">
           <MenuIcon size={24} className="md:hidden" />
           <h1 className="font-bold text-3xl font-integral">
             <Link href="/">Next Store</Link>
@@ -27,6 +28,7 @@ function Navbar() {
           <SearchIcon size={24} className="lg:hidden" />
           <ShoppingCart size={24} />
           <UserCircle2 size={24} />
+          <ThemeToggle/>
         </div>
       </div>
     </header>
