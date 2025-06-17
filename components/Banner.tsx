@@ -4,9 +4,9 @@ import { Button } from "./ui/button";
 const Banner = async () => {
   return (
     <section className="bg-primary-foreground ">
-      <div className="grid  max-w-7xl mx-auto place-items-center grid-cols-1 lg:grid-cols-12">
+      <div className="grid px-4 py-10 max-w-7xl mx-auto place-items-center grid-cols-1 lg:grid-cols-12">
         <div className="lg:col-span-7 space-y-8">
-          <h1 className="font-bold text-6xl font-integral">
+          <h1 className="font-bold text-4xl md:text-6xl font-integral">
             FIND CLOTHES THAT MATCHES YOUR STYLE
           </h1>
           <p className="text-foreground/60">

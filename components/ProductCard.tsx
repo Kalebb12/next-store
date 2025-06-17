@@ -10,7 +10,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
-    <Link href={`/product/${product.id}`}>
+    <Link href={`/product/${product.slug}`}>
       <div className="bg-card text-start rounded-xl hover:shadow-lg shadow-md p-4">
         <div className="relative w-full bg-primary-foreground  h-70">
           <Image

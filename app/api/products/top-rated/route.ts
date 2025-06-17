@@ -1,13 +1,11 @@
 import { prisma } from '@/lib/prisma';
 import { NextResponse } from 'next/server';
 
-export const dynamic = 'force-dynamic'
-
 export async function GET() {
   try {
     const newProducts = await prisma.product.findMany({
       orderBy: {
-        createdAt: 'desc',
+        rating: 'desc',
       },
       take: 4,
     });
