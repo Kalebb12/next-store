@@ -22,7 +22,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </div>
         <div className="space-y-2 mt-4">
           <h3 className="text-xl font-bold truncate">{product.name}</h3>
-          <StarRating rating={product.rating} />
+          <StarRating rating={product.rating} size={5}/>
           <p className="text-md font-semibold">{product.price.toLocaleString("en-US", {style:"currency", currency:"NGN"})}</p>
         </div>
       </div>
